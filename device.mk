@@ -153,6 +153,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor \
-    libhidltransport
+    libhidltransport \
+    android.hidl.base@1.0
 
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
