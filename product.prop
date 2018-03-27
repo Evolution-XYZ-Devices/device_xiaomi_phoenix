@@ -46,3 +46,4 @@ debug.sf.earlyGl.app.duration=21000000
 
 # Graphics
 debug.hwui.renderer=skiavk
+vendor.display.disable_rotator_downscale=1
