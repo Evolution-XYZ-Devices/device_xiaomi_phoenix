@@ -101,3 +101,6 @@ debug.sf.disable_backpressure=1
 # Set stock DPI
 ro.sf.lcd_density=440
 
+# Fingerprint Payment for China apps
+persist.vendor.sys.pay.ifaa=1
+
