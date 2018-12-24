@@ -20,6 +20,10 @@ vendor.fps_hal.                    u:object_r:vendor_fp_prop:s0
 persist.vendor.fpc.                u:object_r:vendor_fp_prop:s0
 persist.sys.fp.                    u:object_r:vendor_fp_prop:s0
 
+# Mlipay
+persist.sys.ifaa                    u:object_r:ifaa_prop:s0
+persist.vendor.sys.pay.		    u:object_r:ifaa_prop:s0
+
 # Sensors
 persist.sensor.                    u:object_r:persist_sensors_prop:s0
 
