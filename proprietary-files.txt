@@ -96,6 +96,9 @@ system_ext/etc/permissions/telephonyservice.xml
 system_ext/framework/qcrilhook.jar
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 
+# Soter
+-app/SoterService/SoterService.apk
+
 # Wifi Display
 -framework/WfdCommon.jar
 system_ext/bin/wfdservice
