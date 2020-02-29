@@ -68,6 +68,22 @@
                        android:resource="@string/dirac_summary" />
         </activity>
 
+        <activity
+            android:name=".DevicePreferenceActivity"
+            android:label="@string/device_specific_settings_title"
+            android:exported="true"
+            android:theme="@style/Theme.SubSettingsBase">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.display" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/device_specific_settings_summary" />
+        </activity>
+
     </application>
 </manifest>
 
