@@ -188,3 +188,21 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0
 
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+
+# WiFi Display
+PRODUCT_PACKAGES += \
+    libavservices_minijail \
+    libdisplayconfig.qti \
+    libminijail \
+    libnl \
+    libqdMetaData \
+    libqdMetaData.system
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/seccomp/wfdservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice.policy
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/privapp-permissions-wfd.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-wfd.xml
