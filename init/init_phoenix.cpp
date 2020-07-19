@@ -2,7 +2,6 @@
    Copyright (c) 2015, The Linux Foundation. All rights reserved.
    Copyright (C) 2016 The CyanogenMod Project.
    Copyright (C) 2019-2020 The LineageOS Project.
-
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
    met:
@@ -36,74 +35,103 @@
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
 
-#include "property_service.h"
 #include "vendor_init.h"
 
 using android::base::GetProperty;
 
-std::vector<std::string> ro_props_default_source_order = {
-    "",
-    "odm.",
-    "product.",
-    "system.",
-    "vendor.",
+constexpr const char *RO_PROP_SOURCES[] = {
+    nullptr,   "product.", "product_services.", "odm.",
+    "vendor.", "system.", "system_ext.", "bootimage.",
+};
+
+constexpr const char *BRANDS[] = {
+    "Redmi",
+    "POCO",
+};
+
+constexpr const char *PRODUCTS[] = {
+    "phoenix",
+    "phoenixin",
+};
+
+constexpr const char *DEVICES[] = {
+    "Redmi K30",
+    "POCO X2",
+};
+
+constexpr const char *BUILD_DESCRIPTION[] = {
+    "sunfish-user 11 RQ2A.210305.006 7119741 release-keys",
+    "sunfish-user 11 RQ2A.210305.006 7119741 release-keys",
+};
+
+constexpr const char *BUILD_FINGERPRINT[] = {
+    "google/sunfish/sunfish:11/RQ2A.210305.006/7119741:user/release-keys",
+    "google/sunfish/sunfish:11/RQ2A.210305.006/7119741:user/release-keys",
+};
+
+constexpr const char *CLIENT_ID[] = {
+    "android-xiaomi",
+    "android-xiaomi-rev1",
 };
 
 void property_override(char const prop[], char const value[], bool add = true) {
-    prop_info *pi;
+  prop_info *pi;
 
-    pi = (prop_info *)__system_property_find(prop);
-    if (pi)
-        __system_property_update(pi, value, strlen(value));
-    else if (add)
-        __system_property_add(prop, strlen(prop), value, strlen(value));
+  pi = (prop_info *)__system_property_find(prop);
+  if (pi)
+    __system_property_update(pi, value, strlen(value));
+  else if (add)
+    __system_property_add(prop, strlen(prop), value, strlen(value));
+}
+
+void load_props(const char *model, bool is_in = false) {
+  const auto ro_prop_override = [](const char *source, const char *prop,
+                                   const char *value, bool product) {
+    std::string prop_name = "ro.";
+
+    if (product)
+      prop_name += "product.";
+    if (source != nullptr)
+      prop_name += source;
+    if (!product)
+      prop_name += "build.";
+    prop_name += prop;
+
+    property_override(prop_name.c_str(), value);
+  };
+
+  for (const auto &source : RO_PROP_SOURCES) {
+    ro_prop_override(source, "device", is_in ? PRODUCTS[1] : PRODUCTS[0], true);
+    ro_prop_override(source, "model", model, true);
+    if (!is_in) {
+      ro_prop_override(source, "brand", BRANDS[0], true);
+      ro_prop_override(source, "name", PRODUCTS[0], true);
+      ro_prop_override(source, "fingerprint", BUILD_FINGERPRINT[0], false);
+    } else {
+      ro_prop_override(source, "brand", BRANDS[1], true);
+      ro_prop_override(source, "name", PRODUCTS[1], true);
+      ro_prop_override(source, "fingerprint", BUILD_FINGERPRINT[1], false);
+    }
+  }
+
+  if (!is_in) {
+    ro_prop_override(nullptr, "description", BUILD_DESCRIPTION[0], false);
+    property_override("ro.boot.product.hardware.sku", PRODUCTS[0]);
+  } else {
+    ro_prop_override(nullptr, "description", BUILD_DESCRIPTION[1], false);
+    property_override("ro.com.google.clientidbase", CLIENT_ID[0]);
+    property_override("ro.com.google.clientidbase.ms", CLIENT_ID[1]);
+  }
+  ro_prop_override(nullptr, "product", model, false);
 }
 
 void vendor_load_properties() {
-    const auto set_ro_build_prop = [](const std::string &source,
-                                      const std::string &prop,
-                                      const std::string &value) {
-        auto prop_name = "ro." + source + "build." + prop;
-        property_override(prop_name.c_str(), value.c_str(), false);
-    };
+  std::string region;
+  region = GetProperty("ro.boot.hwc", "");
 
-    const auto set_ro_product_prop = [](const std::string &source,
-                                        const std::string &prop,
-                                        const std::string &value) {
-        auto prop_name = "ro.product." + source + prop;
-        property_override(prop_name.c_str(), value.c_str(), false);
-    };
-
-    std::string region;
-    region = GetProperty("ro.boot.hwc", "");
-
-    if (region == "CN") {
-        char const fp[] = "google/sunfish/sunfish:11/RQ2A.210305.006/7119741:user/release-keys";
-
-        for (const auto &source : ro_props_default_source_order) {
-
-            property_override("ro.build.fingerprint", fp);
-            property_override("ro.bootimage.build.fingerprint", fp);
-            property_override("ro.system_ext.build.fingerprint", fp);
-            set_ro_build_prop(source, "fingerprint", fp);
-            set_ro_product_prop(source, "brand", "Redmi");
-            set_ro_product_prop(source, "device", "phoenix");
-            set_ro_product_prop(source, "model", "Redmi K30");
-        }
-        property_override("ro.build.description", "phoenix-user 10 QKQ1.190825.002 V11.0.9.0.QGHCNXM release-keys");
-    } else if (region == "INDIA") {
-       char const fp[] = "google/sunfish/sunfish:11/RQ2A.210305.006/7119741:user/release-keys";
-
-        for (const auto &source : ro_props_default_source_order) {
-
-            property_override("ro.build.fingerprint", fp);
-            property_override("ro.bootimage.build.fingerprint", fp);
-            property_override("ro.system_ext.build.fingerprint", fp);
-            set_ro_build_prop(source, "fingerprint", fp);
-            set_ro_product_prop(source, "brand", "POCO");
-            set_ro_product_prop(source, "device", "phoenixin");
-            set_ro_product_prop(source, "model", "POCO X2");
-        }
-        property_override("ro.build.description", "phoenixin-user 10 QKQ1.190825.002 V11.0.6.0.QGHINXM release-keys");
-    }
+  if (region == "CN") {
+    load_props(DEVICES[0], false);
+  } else if (region == "INDIA") {
+    load_props(DEVICES[1], true);
+  }
 }
