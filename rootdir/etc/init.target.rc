@@ -448,6 +448,10 @@ service panel-info-sh /system/vendor/bin/sh /vendor/etc/init.panel_info.sh
 on property:sys.boot_completed=1
     start panel-info-sh
 
+    # Report max frequency to unity tasks.
+    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so"
+    write /proc/sys/kernel/sched_lib_mask_force 255
+
 service hbtp /system/vendor/bin/hbtp_daemon
      class main
      user system
