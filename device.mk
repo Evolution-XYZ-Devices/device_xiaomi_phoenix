@@ -81,8 +81,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-goodix.kl
 
 # Lights
-PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.xiaomi_phoenix
+#PRODUCT_PACKAGES += \
+#    android.hardware.light@2.0-service.xiaomi_phoenix
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/android.hardware.light@2.0-service:$(TARGET_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/bin/android.hardware.light@2.0-service \
+    $(LOCAL_PATH)/android.hardware.light@2.0-service.rc:$(TARGET_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/init/android.hardware.light@2.0-service.rc
+
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -134,3 +139,8 @@ PRODUCT_BOOT_JARS += \
 
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
+
+# HIDL
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhwbinder
