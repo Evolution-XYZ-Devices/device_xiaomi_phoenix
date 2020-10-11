@@ -14,7 +14,10 @@ endif
 
 # Camera
 PRODUCT_PRODUCT_PROPERTIES += \
-    vendor.camera.aux.packagelist=org.lineageos.snap,net.sourceforge.opencamera,org.codeaurora.snapcam
+    persist.camera.gyro.disable=0 \
+    persist.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com.google.camera \
+    persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com.google.camera \
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera
 
 # Telephony
 PRODUCT_PRODUCT_PROPERTIES += \
