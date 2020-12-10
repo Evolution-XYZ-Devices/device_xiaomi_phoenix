@@ -25,6 +25,10 @@ product/lib64/com.qualcomm.qti.ant@1.0.so
 #product/lib64/libdpmtcm.so
 #-product/priv-app/dpmserviceapp/dpmserviceapp.apk
 
+# Bluetooth (aptX) - redfin-user-11-RD1A.201105.003.A1-6886512-release-keys
+system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
+system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
+
 # IMS
 -product/priv-app/ims/ims.apk|600c6d03c03f88f35c51ba8e6b1a4cb7d70b94e6
 lib64/libdiag_system.so
