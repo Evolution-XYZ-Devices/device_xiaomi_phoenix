@@ -32,3 +32,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.sf.blurs_are_expensive=1 \
     debug.sf.latch_unsignaled=1 \
     debug.sf.disable_backpressure=1
+
+# Power-saving props
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.vendor.use_data_netmgrd=true \
+    ro.vold.umsdirtyratio=20 \
+    ro.ril.disable.power.collapse=0 \
+    power.saving.mode=1 \
+    pm.sleep_mode=1
