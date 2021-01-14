@@ -52,8 +52,10 @@ system_ext/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar
 -system_ext/lib64/com.quicinc.cne.constants@2.0.so
 -system_ext/lib64/com.quicinc.cne.constants@2.1.so
 
+# IMS - from LA.QSSI.11.0.r1-07500-qssi.0
+-system_ext/priv-app/ims/ims.apk|535c6e1b0b633898c3a8962be2bd0fec8176d83d
+
 # IMS
--system_ext/priv-app/ims/ims.apk|326d8fd65aa2235d4b2279f858e09130952b95a3
 system_ext/lib/vendor.qti.imsrtpservice@3.0.so
 system_ext/lib/vendor.qti.diaghal@1.0.so
 system_ext/lib64/libdiag_system.so
