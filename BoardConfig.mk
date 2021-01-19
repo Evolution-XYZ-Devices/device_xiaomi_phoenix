@@ -152,6 +152,10 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/dev/input/event3"
 
+# Properties
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
 # Treble
 BOARD_VNDK_VERSION := current
 
