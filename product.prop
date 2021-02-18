@@ -50,3 +50,7 @@ vendor.display.disable_rotator_downscale=1
 
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
+
+# LMKD
+ro.config.low_ram=false
+ro.lmk.log_stats=true
