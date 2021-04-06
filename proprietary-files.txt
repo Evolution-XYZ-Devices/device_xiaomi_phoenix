@@ -163,3 +163,7 @@ system_ext/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
 # Telephony (qti-telephony-common)
 # Smali edited: Removed `miui.os.Build` dependency in `WifiManagerCompatible.isNeeded()`
 #product/framework/qti-telephony-common.jar|4016ebe196c0573ccb477181441dfdc887f87250
+
+# Perf
+system_ext/lib/vendor.qti.hardware.iop@2.0.so
+system_ext/lib64/vendor.qti.hardware.iop@2.0.so
