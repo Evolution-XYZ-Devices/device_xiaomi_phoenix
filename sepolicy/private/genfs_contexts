@@ -1,0 +1,1 @@
+genfscon sysfs /class/power_supply/battery/capacity u:object_r:vendor_sysfs_battery_supply:s0

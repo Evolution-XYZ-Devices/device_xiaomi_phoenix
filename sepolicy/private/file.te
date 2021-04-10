@@ -9,6 +9,7 @@ type persist_file, file_type;
 
 # socket
 type pps_socket, file_type;
+type vendor_sysfs_battery_supply, sysfs_type, fs_type;
 
 #sysfs
 type sysfs_graphics, sysfs_type, fs_type;

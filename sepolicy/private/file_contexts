@@ -16,3 +16,5 @@
 /(product|system/product)/vendor_overlay/[0-9]+/lib(64)?/soundfx(/.*)?     u:object_r:vendor_file:s0
 /(product|system/product)/vendor_overlay/[0-9]+/overlay(/.*)?    u:object_r:vendor_overlay_file:s0
 
+# Health
+/sys/devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify(/.*)?                              u:object_r:vendor_sysfs_battery_supply:s0

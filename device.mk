@@ -105,7 +105,8 @@ PRODUCT_BOOT_JARS += \
 
 # Init
 PRODUCT_PACKAGES += \
-    init.qcom.rc
+    init.qcom.rc \
+    init.smartcharging.rc
 
 # IPACM
 PRODUCT_PACKAGES += \
