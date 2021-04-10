@@ -29,8 +29,6 @@ TARGET_INCLUDE_STOCK_ARCORE := true
 
 # Maintainer Properties
 EVO_BUILD_TYPE := OFFICIAL
-EVO_DONATE_URL := https://www.paypal.me/chiru2000
-EVO_MAINTAINER := CHIRANTH
 
 BUILD_FINGERPRINT := POCO/phoenixin/phoenixin:11/RKQ1.200826.002/V12.1.3.0.RGHINXM:user/release-keys
 
