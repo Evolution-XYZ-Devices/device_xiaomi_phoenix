@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_phoenix.mk
+    $(LOCAL_DIR)/evolution_phoenix.mk
+
+COMMON_LUNCH_CHOICES := \
+    evolution_phoenix-user \
+    evolution_phoenix-userdebug \
+    evolution_phoenix-eng
