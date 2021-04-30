@@ -139,6 +139,10 @@ on boot
 #disable qcom qc3p5
     setprop persist.vendor.cp.support_qc3p5 0
 
+# smart charging
+    chown system system /sys/class/power_supply/battery/input_suspend
+    chmod 0666 /sys/class/power_supply/battery/input_suspend
+
 # Add a cpuset for the camera daemon
 # We want all cores for camera
     mkdir /dev/cpuset/camera-daemon
