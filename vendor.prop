@@ -157,6 +157,8 @@ vendor.display.enable_force_split=0
 vendor.display.enable_null_display=0
 vendor.display.enable_optimize_refresh=1
 vendor.gralloc.disable_ubwc=0
+persist.sys.sf.color_mode=0
+persist.sys.sf.native_mode=0
 
 # Keystore
 ro.hardware.keystore_desede=true
