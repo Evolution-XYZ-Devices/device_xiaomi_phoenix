@@ -125,16 +125,16 @@ on boot
     chmod 0444 /sys/class/drm/card0-DSI-1/dynamic_fps
     start rmt_storage
     start rfs_access
-    write /dev/cpuset/top-app/cpus 0-3
-    write /dev/cpuset/foreground/cpus 0-3
-    write /dev/cpuset/foreground/boost/cpus 0-3
-    write /dev/cpuset/background/cpus 0-3
-    write /dev/cpuset/system-background/cpus 0-3
+
+    # Setup runtime cpusets
     write /dev/cpuset/top-app/cpus 0-7
-    write /dev/cpuset/foreground/cpus 0-7
-    write /dev/cpuset/foreground/boost/cpus 0-7
-    write /dev/cpuset/background/cpus 0-7
-    write /dev/cpuset/system-background/cpus 0-7
+    write /dev/cpuset/foreground/cpus 0-5,7
+    write /dev/cpuset/background/cpus 2-5
+    write /dev/cpuset/system-background/cpus 0-3
+    write /dev/cpuset/background/cpus 4-5
+    write /dev/cpuset/system-background/cpus 2-5
+    write /dev/cpuset/restricted/cpus 2-5
+
     chown system system /sys/class/thermal/thermal_message/sconfig
 #disable qcom qc3p5
     setprop persist.vendor.cp.support_qc3p5 0
