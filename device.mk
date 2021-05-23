@@ -171,7 +171,8 @@ PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
 
 # Device Settings
 PRODUCT_PACKAGES += \
-    XiaomiParts
+    XiaomiParts \
+    POCOParts
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/parts/privapp-permissions-parts.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-parts.xml
@@ -268,6 +269,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     init.mi_thermald.rc \
     init.qcom.rc
+
+# POCOParts init
+PRODUCT_PACKAGES += \
+    init.pocoparts.sh \
+    init.pocoparts.rc
 
 # IPC router config
 PRODUCT_COPY_FILES += \
