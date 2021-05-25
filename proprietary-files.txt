@@ -699,6 +699,7 @@ vendor/lib/libloc_core.so
 vendor/lib/libloc_socket.so
 vendor/lib/liblowi_client.so
 vendor/lib/liblowi_wifihal.so
+vendor/lib/libqcc_file_agent.so
 vendor/lib/libslimclient.so
 vendor/lib/libxtadapter.so
 vendor/lib/vendor.qti.gnss@1.0.so
@@ -712,6 +713,9 @@ vendor/lib/vendor.qti.gnss@4.0.so
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
 vendor/lib64/libbatching.so
+vendor/lib64/libaoa.so
+vendor/lib64/libcacertclient.so
+vendor/lib64/libcdfw_remote_api.so
 vendor/lib64/libcdfw.so
 vendor/lib64/libdataitems.so
 vendor/lib64/libgarden_haltests_e2e.so
@@ -729,8 +733,10 @@ vendor/lib64/libloc_socket.so
 vendor/lib64/liblowi_client.so
 vendor/lib64/liblowi_wifihal.so
 vendor/lib64/libqdma_file_agent.so
+vendor/lib64/libqcc_file_agent.so
 vendor/lib64/libslimclient.so
 vendor/lib64/libxtadapter.so
+vendor/lib64/libmmosal.so
 vendor/lib64/vendor.qti.gnss@1.0.so
 vendor/lib64/vendor.qti.gnss@1.1.so
 vendor/lib64/vendor.qti.gnss@1.2.so
@@ -739,6 +745,8 @@ vendor/lib64/vendor.qti.gnss@2.1.so
 vendor/lib64/vendor.qti.gnss@3.0.so
 vendor/lib64/vendor.qti.gnss@4.0-service.so
 vendor/lib64/vendor.qti.gnss@4.0.so
+vendor/lib64/vendor.qti.hardware.cacert@1.0.so
+vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 
 # GPS-Hardware
 vendor/lib/libaoa.so
