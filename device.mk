@@ -566,7 +566,8 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
-    libhwbinder.vendor
+    libhwbinder.vendor \
+    android.hidl.base@1.0
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
