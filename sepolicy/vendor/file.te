@@ -2,3 +2,6 @@ type ultrasound_device, dev_type;
 
 # Kcal
 type kcal_dev, sysfs_type, fs_type;
+
+# Vibrator
+type vibrator_dev, sysfs_type, fs_type;
