@@ -888,6 +888,16 @@ vendor/lib/libdsd2pcm.so
 vendor/lib/libFlacSwDec.so
 -vendor/lib/libMpeg4SwEncoder.so
 
+# Mlipay
+vendor/bin/mlipayd@1.1
+vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
+-vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml
+vendor/lib64/libmlipay@1.1.so
+vendor/lib64/libmlipay.so
+vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so
+vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so
+
 # Misys
 system/system/etc/permissions/vendor.xiaomi.hardware.misys-V1.0-java-permission.xml
 system/system/etc/permissions/vendor.xiaomi.hardware.misys-V2.0-java-permission.xml
