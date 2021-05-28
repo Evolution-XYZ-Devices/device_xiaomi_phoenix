@@ -83,4 +83,9 @@
     <string name="edit_value">Choose new Value</string>
     <string name="default_value">Default Value</string>
     <string name="edit_hint">Value between %1$d and %2$d</string>
+
+    <!-- Vibration -->
+    <string name="vibration_title">Vibration Control</string>
+    <string name="vibration_strength_title">Strength</string>
+    <string name="vibration_warning">High vibration strength may damage your vibration motor</string>
 </resources>
