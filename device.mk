@@ -163,6 +163,10 @@ PRODUCT_PACKAGES += \
     com.quicinc.cne \
     services-ext
 
+# Charger
+PRODUCT_PACKAGES += \
+    libsuspend
+
 # Device Settings
 PRODUCT_PACKAGES += \
     XiaomiParts \
