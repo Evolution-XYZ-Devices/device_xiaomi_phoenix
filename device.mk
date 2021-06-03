@@ -169,6 +169,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
 
+# Charger
+PRODUCT_PACKAGES += \
+    libsuspend
+
 # Device Settings
 PRODUCT_PACKAGES += \
     XiaomiParts \
