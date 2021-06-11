@@ -3,7 +3,7 @@ Copyright (C) 2020 The LineageOS Project
 Device configuration for Xiaomi Redmi K30 / Poco X2
 =========================================
 
-The Xiaomi Redmi K30 / Poco X2 (codenamed _"phoenix / phoenixin"_) are mid range smartphones from Xiaomi's sub-brand Redmi and Poco, respectively.
+The Xiaomi Redmi K30 / Poco X2 are mid range smartphones from Xiaomi's sub-brand Redmi and Poco, respectively.
 
 Redmi K30 was announced and released in December 2019, while Poco X2 was announced and released in February 2020.
 
