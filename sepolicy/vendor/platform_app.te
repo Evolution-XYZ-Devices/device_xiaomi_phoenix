@@ -1,2 +1,5 @@
 # FPS info
 allow platform_app sysfs_graphics:file r_file_perms;
+
+# Allow MIUI camera app to read no. of cpus
+allow platform_app cgroup:file r_file_perms;
