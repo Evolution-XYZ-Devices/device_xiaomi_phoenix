@@ -3,3 +3,6 @@ set_prop(vendor_init, vendor_ims_prop)
 set_prop(vendor_init, vendor_cnd_prop)
 
 allow vendor_init proc_sched:file write;
+
+# Allow vendor_init to set vendor_camera_prop
+set_prop(vendor_init, vendor_camera_prop)
