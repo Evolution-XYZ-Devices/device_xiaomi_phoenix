@@ -109,6 +109,14 @@ on post-fs-data
     chown system system /sys/class/drm/card0-DSI-1/fod_ui_ready
     chown system system /sys/class/drm/card0-DSI-1/dim_layer_enable
 
+on late-init
+    # Start services for bootanim
+    start surfaceflinger
+    start bootanim
+    start vendor.hwcomposer-2-4
+    start vendor.configstore-hal
+    start vendor.qti.hardware.display.allocator
+
 on property:ro.boot.dp=0x0 && property:ro.boot.secureboot=1
     write /sys/bus/platform/devices/c440000.qcom,spmi:qcom,pm6150@0:qcom,power-on@800/pshold_reboot 7
 
