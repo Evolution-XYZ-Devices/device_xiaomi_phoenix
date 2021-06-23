@@ -3387,7 +3387,12 @@ case "$target" in
             echo "0:1248000 6:1324800" > /sys/module/cpu_boost/parameters/powerkey_input_boost_freq
             echo 100 > /sys/module/cpu_boost/parameters/powerkey_input_boost_ms
 
-            # Set Memory parameters
+	    # Configure default schedTune value for foreground/top-app
+	    echo 1 > /dev/stune/foreground/schedtune.prefer_idle
+	    echo 10 > /dev/stune/top-app/schedtune.boost
+	    echo 1 > /dev/stune/top-app/schedtune.prefer_idle
+
+	    # Set Memory parameters
             configure_memory_parameters
 
             # Enable bus-dcvs
@@ -4032,6 +4037,11 @@ case "$target" in
 
     echo "0:1248000" > /sys/module/cpu_boost/parameters/input_boost_freq
     echo 40 > /sys/module/cpu_boost/parameters/input_boost_ms
+
+    # Configure default schedTune value for foreground/top-app
+    echo 1 > /dev/stune/foreground/schedtune.prefer_idle
+    echo 10 > /dev/stune/top-app/schedtune.boost
+    echo 1 > /dev/stune/top-app/schedtune.prefer_idle
 
     # Set Memory parameters
     configure_memory_parameters
