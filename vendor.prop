@@ -92,6 +92,7 @@ vendor.audio.tunnel.encode=false
 vendor.audio.use.sw.alac.decoder=true
 vendor.audio.use.sw.ape.decoder=true
 vendor.audio.volume.headset.gain.depcal=true
+persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
 
 # Bluetooth
 persist.bluetooth.a2dp_offload.disabled=false
