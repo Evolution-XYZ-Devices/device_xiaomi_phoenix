@@ -463,6 +463,7 @@ on property:sys.boot_completed=1
     # ZRAM setup
     write /sys/block/zram0/comp_algorithm lz4
     write /proc/sys/vm/page-cluster 0
+    write /proc/sys/vm/swappiness 100
 
 service hbtp /system/vendor/bin/hbtp_daemon
      class main
