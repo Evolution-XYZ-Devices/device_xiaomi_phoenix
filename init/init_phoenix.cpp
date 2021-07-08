@@ -60,13 +60,13 @@ constexpr const char *DEVICES[] = {
 };
 
 constexpr const char *BUILD_DESCRIPTION[] = {
-    "redfin-user 11 RQ3A.210605.005 7349499 release-keys",
-    "redfin-user 11 RQ3A.210605.005 7349499 release-keys",
+    "redfin-user 11 RQ3A.210705.001 7380771 release-keys",
+    "redfin-user 11 RQ3A.210705.001 7380771 release-keys",
 };
 
 constexpr const char *BUILD_FINGERPRINT[] = {
-    "google/redfin/redfin:11/RQ3A.210605.005/7349499:user/release-keys",
-    "google/redfin/redfin:11/RQ3A.210605.005/7349499:user/release-keys",
+    "google/redfin/redfin:11/RQ3A.210705.001/7380771:user/release-keys",
+    "google/redfin/redfin:11/RQ3A.210705.001/7380771:user/release-keys",
 };
 
 constexpr const char *CLIENT_ID[] = {
