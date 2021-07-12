@@ -28,6 +28,7 @@ import androidx.preference.PreferenceCategory;
 import android.content.Context;
 import android.content.SharedPreferences;
 import androidx.preference.SwitchPreference;
+import androidx.preference.TwoStatePreference;
 import android.util.Log;
 
 import com.xiaomi.parts.kcal.KCalSettingsActivity;
@@ -44,10 +45,12 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String CATEGORY_DISPLAY = "display";
     public static final String PREF_DEVICE_KCAL = "device_kcal";
     public static final String KEY_VIBSTRENGTH = "vib_strength";
+    public static final String KEY_USB2_SWITCH = "usb2_fast_charge";
 
     private Preference mKcal;
     private static Context mContext;
     private VibratorStrengthPreference mVibratorStrength;
+    private static TwoStatePreference mUSB2FastChargeModeSwitch;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -71,6 +74,12 @@ public class DeviceSettings extends PreferenceFragment implements
             startActivity(intent);
             return true;
         });
+
+        // USB2 Force FastCharge Toggle
+        mUSB2FastChargeModeSwitch = (TwoStatePreference) findPreference(KEY_USB2_SWITCH);
+        mUSB2FastChargeModeSwitch.setEnabled(USB2FastChargeModeSwitch.isSupported());
+        mUSB2FastChargeModeSwitch.setChecked(PreferenceManager.getDefaultSharedPreferences(getContext()).getBoolean(DeviceSettings.KEY_USB2_SWITCH, false));
+        mUSB2FastChargeModeSwitch.setOnPreferenceChangeListener(new USB2FastChargeModeSwitch());
 	}
 
     @Override

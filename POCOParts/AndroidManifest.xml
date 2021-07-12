@@ -80,5 +80,16 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <!-- USB 2.0 force FastCharge  Tile -->
+        <service
+            android:name=".USB2FastChargeTileService"
+            android:icon="@drawable/ic_usb2_fc"
+            android:label="@string/usb2_fc_title"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action
+                    android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
     </application>
 </manifest>

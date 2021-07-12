@@ -5,3 +5,6 @@ type kcal_dev, sysfs_type, fs_type;
 
 # Vibrator
 type vibrator_dev, sysfs_type, fs_type;
+
+# Fast Charge
+type sysfs_fastcharge, fs_type, sysfs_type;
