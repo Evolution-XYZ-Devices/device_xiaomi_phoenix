@@ -68,6 +68,7 @@ ro.netflix.bsp_rev=Q6150-17263-1
 
 # Perfetto
 iorapd.perfetto.enable=true
+iorapd.readahead.enable=true
 
 # Radio
 DEVICE_PROVISIONED=1
