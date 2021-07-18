@@ -23,7 +23,7 @@
             android:title="@string/device_min_refresh_rate"
             android:entries="@array/device_refresh_rates"
             android:entryValues="@array/device_refresh_rates_val"
-            android:defaultValue="3" />
+            android:defaultValue="4" />
 
          <SwitchPreference
             android:key="pref_power_save_refresh_rate_switch"
@@ -35,7 +35,7 @@
             android:title="@string/device_power_save_refresh_rate"
             android:entries="@array/device_power_save_refresh_rates"
             android:entryValues="@array/device_power_save_refresh_rates_val"
-            android:defaultValue="2" />
+            android:defaultValue="3" />
 
     </PreferenceCategory>
 

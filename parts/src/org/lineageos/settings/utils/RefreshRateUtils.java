@@ -26,12 +26,12 @@ public class RefreshRateUtils {
 
     public static int getRefreshRate(Context context) {
         SharedPreferences sharedPref = context.getSharedPreferences("parts_pref", Context.MODE_PRIVATE);
-        return sharedPref.getInt("refresh_rate", 3);
+        return sharedPref.getInt("refresh_rate", 4);
     }
 
     public static int getPowerSaveRefreshRate(Context context) {
         SharedPreferences sharedPref = context.getSharedPreferences("parts_pref", Context.MODE_PRIVATE);
-        return sharedPref.getInt("power_save_refresh_rate", 2);
+        return sharedPref.getInt("power_save_refresh_rate", 3);
     }
 
     public static boolean getPowerSaveRefreshRateSwitch(Context context) {

@@ -26,10 +26,12 @@
     <string-array name="device_power_save_refresh_rates">
         <item>50 Hz</item>
         <item>60 Hz</item>
+        <item>90 Hz</item>
     </string-array>
     <string-array name="device_power_save_refresh_rates_val">
         <item>1</item>
         <item>2</item>
+        <item>3</item>
     </string-array>
 
     <!-- Values for Dirac headset pref -->
