@@ -125,10 +125,6 @@ dalvik.vm.dex2oat-threads=8
 dalvik.vm.dex2oat64.enabled=true
 
 # Display (phase offsets)
-debug.sf.early_app_phase_offset_ns=500000
-debug.sf.early_gl_app_phase_offset_ns=15000000
-debug.sf.early_gl_phase_offset_ns=3000000
-debug.sf.early_phase_offset_ns=500000
 debug.sf.high_fps_early_gl_phase_offset_ns=6500000
 debug.sf.high_fps_early_phase_offset_ns=6100000
 debug.sf.high_fps_late_app_phase_offset_ns=1000000
@@ -175,13 +171,17 @@ vendor.display.disable_hw_recovery_dump=0
 vendor.display.disable_inline_rotator=1
 vendor.display.disable_scaler=0
 vendor.display.disable_ui_3d_tonemap=1
-vendor.display.enable_default_color_mode=1
+vendor.display.enable_default_color_mode=0
 vendor.display.enable_force_split=0
 vendor.display.enable_null_display=0
 vendor.display.enable_optimize_refresh=1
+vendor.display.idle_time=1100
 vendor.gralloc.disable_ubwc=0
 persist.sys.sf.color_mode=0
 persist.sys.sf.native_mode=0
+ro.vendor.display.ad=1
+ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg
+ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg
 
 # Keystore
 ro.hardware.keystore_desede=true
