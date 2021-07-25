@@ -402,20 +402,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_phoenix/com.android.nfc_extras.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_phoenix/com.nxp.mifare.xml
 
-# Notch style overlay
-PRODUCT_PACKAGES += \
-    NotchNoFillOverlay
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
-
-# Overlays - override vendor ones
-PRODUCT_PACKAGES += \
-    FrameworksResCommon \
-    FrameworksResTarget \
-    DevicesOverlay \
-    DevicesAndroidOverlay
 
 # Permissions
 PRODUCT_COPY_FILES += \

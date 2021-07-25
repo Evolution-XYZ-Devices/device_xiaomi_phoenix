@@ -38,14 +38,4 @@
             android:defaultValue="3" />
 
     </PreferenceCategory>
-
-    <PreferenceCategory
-        android:title="@string/device_cutout_title">
-
-        <SwitchPreference
-            android:key="pref_pill_style_notch"
-            android:title="@string/device_pill_style_notch"/>
-
-    </PreferenceCategory>
-
 </PreferenceScreen>
