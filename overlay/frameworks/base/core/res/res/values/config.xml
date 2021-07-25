@@ -649,4 +649,6 @@
          Used to decide if the user can change the colors -->
     <bool name="config_multiColorBatteryLed">false</bool>
 
+    <!-- Whether to show settings for hiding notch fill -->
+    <bool name="config_showHideNotchSettings">true</bool>
 </resources>
