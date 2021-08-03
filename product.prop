@@ -91,3 +91,6 @@ ro.sf.lcd_density=440
 # Fingerprint Payment for China apps
 persist.vendor.sys.pay.ifaa=1
 
+# IORap
+ro.iorapd.enable=true
+
