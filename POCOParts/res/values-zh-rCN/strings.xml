@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2018 The Asus-SDM660 Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="advanced_settings">POCO 选项</string>
+    <string name="advanced_settings_summary">设备定制选项</string>
+
+    <string name="display_title">显示</string>
+
+    <!-- KCal -->
+    <string name="device_kcal_title">颜色显示校准</string>
+    <string name="kcal_enabled_summary">使用 KCAL 校准显示</string>
+
+    <!-- kcal -->
+    <string name="advanced_settings_kcal">颜色显示校准</string>
+    <string name="cat_colormanagement">颜色设置</string>
+    <string name="cat_calibration">校准显示</string>
+
+    <string name="kcal_enabled">开启</string>
+    <string name="kcal_disabled">关闭</string>
+    <string name="set_on_boot">启动时设置</string>
+    <string name="color_red">红</string>
+    <string name="color_green">绿</string>
+    <string name="color_blue">蓝</string>
+    <string name="color_minimum">最低值</string>
+    <string name="saturation">饱和度</string>
+    <string name="value">值</string>
+    <string name="contrast">对比度</string>
+    <string name="hue">色调</string>
+    <string name="grayscale">灰度显示</string>
+
+    <string name="presets_dialog_title">预设选择</string>
+    <!-- Presets -->
+    <string name="preset_default">默认</string>
+    <string name="preset_version_1">预设 1</string>
+    <string name="preset_version_2">预设 2</string>
+    <string name="preset_version_3">预设 3</string>
+    <string name="preset_triluminous">三光</string>
+    <string name="preset_deep_black_white">深黑色和白色</string>
+    <string name="preset_deep_natural">深自然</string>
+    <string name="preset_cool_amoled">不错的液晶</string>
+    <string name="preset_extreme_amoled">极致液晶</string>
+    <string name="preset_warm_amoled">暖色液晶</string>
+    <string name="preset_hybrid_mamba">混合曼巴</string>
+    <string name="preset_sir_banger">班格爵士</string>
+    <string name="preset_gerard_extrem_cool">极酷杰拉德</string>
+    <string name="preset_yoyoz808">Yoyoz808</string>
+    <string name="preset_purian">普里安</string>
+    <string name="preset_deep_black_colorful">深黑和多彩</string>
+    <string name="preset_vomer_deep_rich">深富犁骨</string>
+    <string name="preset_franco">佛朗哥</string>
+    <string name="preset_wrinklefree_cool">不错的无皱</string>
+    <string name="preset_harley_tech">哈雷科技</string>
+    <string name="preset_perfection">完美</string>
+    <string name="preset_banged_up">撞色</string>
+    <string name="preset_sim_cooler">模拟冷却</string>
+    <string name="preset_obsanity">包围</string>
+    <string name="preset_obsanity_ips">IPS 包围</string>
+
+    <!-- menu -->
+    <string name="kcal_presets" translatable="false">@string/presets_dialog_title</string>
+    <string name="kcal_reset">重置</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">值: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">值</string>
+    <string name="custom_seekbar_default_value_to_set">默认值: <xliff:g id="v">%s</xliff:g>\n长按设置</string>
+    <string name="custom_seekbar_default_value_is_set">已设置默认值</string>
+
+    <!-- CustomSeekBarPreference -->
+    <string name="edit_value">选择一个新的值</string>
+    <string name="default_value">默认值</string>
+    <string name="edit_hint">在 %1$d 和 %2$d 之间的值</string>
+
+    <!-- Vibration -->
+    <string name="vibration_title">振动控制</string>
+    <string name="vibration_strength_title">加强</string>
+    <string name="vibration_warning">高强度振动可能会损坏您的马达</string>
+
+    <!-- USB 2.0 Force FastCharge -->
+    <string name="usb_title">USB</string> 
+    <string name="usb2_fc_title">USB 2.0 快速充电</string>
+    <string name="usb2_fc_summary">在 USB 2.0 模式下强制高达 900mA 的快速充电</string>
+</resources>
