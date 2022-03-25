@@ -645,9 +645,9 @@
     <bool name="config_is_powerbutton_fps" translatable="false" >true</bool>
 
     <array name="config_sfps_sensor_props_0" translatable="false">
-        <item>local:4630946688386997377</item> <!--item>displayId</item-->
-        <item>1080</item> <!--item>sensorLocationX</item-->
-        <item>1030</item> <!--item>sensorLocationY</item-->
+        <item></item> <!--item>displayId</item-->
+        <item></item> <!--item>sensorLocationX</item-->
+        <item>950</item> <!--item>sensorLocationY</item-->
         <item>115</item> <!--item>sensorRadius</item-->
     </array>
 </resources>
