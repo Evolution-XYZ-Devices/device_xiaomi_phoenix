@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.lineageos.settings"
+    xmlns:tools="http://schemas.android.com/tools"
     android:versionCode="3"
     android:versionName="3.0"
     android:sharedUserId="android.uid.system">
@@ -21,6 +22,11 @@
         android:allowBackup="true"
         android:label="@string/device_settings_app_name"
         android:persistent="true">
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            tools:replace="android:authorities"/>
 
         <receiver android:name=".BootCompletedReceiver" android:exported="true">
             <intent-filter android:priority="1000">
