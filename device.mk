@@ -137,7 +137,8 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
 
 PRODUCT_PACKAGES += \
-    libpiex_shim
+    libpiex_shim \
+    libwatermark_shim
 
 # CNE
 PRODUCT_PACKAGES += \
