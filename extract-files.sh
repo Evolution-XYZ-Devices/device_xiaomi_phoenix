@@ -56,6 +56,9 @@ function blob_fixup() {
     vendor/lib64/libgoodixhwfingerprint.so )
     "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
     ;;
+    vendor/lib64/camera/components/com.qti.node.watermark.so)
+    "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
+    ;;
     esac
 }
 

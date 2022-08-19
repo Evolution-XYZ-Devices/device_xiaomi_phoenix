@@ -136,6 +136,9 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor \
     android.hardware.keymaster@4.1.vendor
 
+PRODUCT_PACKAGES += \
+    libpiex_shim
+
 # CNE
 PRODUCT_PACKAGES += \
     cneapiclient \
