@@ -1,0 +1,22 @@
+[
+  {
+    "remote": "github",
+    "repository": "SreekanthPalakurthi/vendor_xiaomi_phoenix",
+    "target_path": "vendor/xiaomi/phoenix"
+  },
+  {
+    "remote": "github",
+    "repository": "SreekanthPalakurthi/kranul_phoenix",
+    "target_path": "kernel/xiaomi/phoenix"
+  },
+  {
+    "remote": "github",
+    "repository": "ArrowOS-Devices/android_device_xiaomi_extras",
+    "target_path": "device/xiaomi/extras"
+  },
+  {
+    "remote": "github",
+    "repository": "android_packages_apps_GCamGOPrebuilt",
+    "target_path": "packages/apps/GCamGOPrebuilt"
+  }
+]
