@@ -1,5 +1,0 @@
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <bool name="config_supportBatteryHealth">true</bool>
-    <!-- Battery Charging cycle counts -->
-    <bool name="config_showChargingCycles">true</bool>
-</resources>
