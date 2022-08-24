@@ -35,10 +35,10 @@
     <dimen name="status_bar_extra_padding">0dp</dimen>
 
     <!-- Padding on the start of the quick statusbar (not top-most statusbar) -->
-    <dimen name="qs_header_start_padding">6dp</dimen>
+    <dimen name="qs_header_start_padding">15dp</dimen>
 
     <!-- Padding on the end of the quick statusbar (not top-most statusbar) -->
-    <dimen name="qs_header_end_padding">4dp</dimen>
+    <dimen name="qs_header_end_padding">15dp</dimen>
 
     <!-- Location of physical power button -->
     <dimen name="physical_power_button_center_screen_location_y">950px</dimen>
