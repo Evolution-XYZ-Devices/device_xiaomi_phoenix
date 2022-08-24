@@ -23,22 +23,22 @@
     <dimen name="rounded_corner_content_padding">16dp</dimen>
 
     <!-- the padding on the top of the statusbar (usually 0) -->
-    <dimen name="status_bar_padding_top">8dp</dimen>
+    <dimen name="status_bar_padding_top">6dp</dimen>
 
     <!-- the padding on the start of the statusbar -->
-    <dimen name="status_bar_padding_start">15dp</dimen>
+    <dimen name="status_bar_padding_start">6dp</dimen>
 
     <!-- the padding on the end of the statusbar -->
-    <dimen name="status_bar_padding_end">6dp</dimen>
+    <dimen name="status_bar_padding_end">4dp</dimen>
 
     <!-- the padding on the start and the end of the statusbar -->
-    <dimen name="status_bar_extra_padding">8dp</dimen>
+    <dimen name="status_bar_extra_padding">0dp</dimen>
 
     <!-- Padding on the start of the quick statusbar (not top-most statusbar) -->
-    <dimen name="qs_header_start_padding">15dp</dimen>
+    <dimen name="qs_header_start_padding">6dp</dimen>
 
     <!-- Padding on the end of the quick statusbar (not top-most statusbar) -->
-    <dimen name="qs_header_end_padding">15dp</dimen>
+    <dimen name="qs_header_end_padding">4dp</dimen>
 
     <!-- Location of physical power button -->
     <dimen name="physical_power_button_center_screen_location_y">950px</dimen>
