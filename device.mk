@@ -14,9 +14,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/phoenix/phoenix-vendor.mk)
 
-# Include PSU if synced
-$(call inherit-product-if-exists, vendor/google/psu/google-psu.mk)
-
 PRODUCT_BUILD_SUPER_PARTITION := false
 BOARD_BUILD_PRODUCT_IMAGE := true
 PRODUCT_SHIPPING_API_LEVEL := 29
@@ -46,7 +43,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.service \
-    audio.a2dp.default \
     audio.primary.sm6150:32 \
     audio.r_submix.default \
     audio.usb.default \
@@ -114,7 +110,7 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
-    android.hardware.bluetooth.audio@2.0-impl \
+    android.hardware.bluetooth.audio-impl \
     audio.bluetooth.default \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
@@ -136,6 +132,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor \
     android.hardware.keymaster@4.1.vendor
+
+PRODUCT_PACKAGES += \
+    libpiex_shim \
+    libwatermark_shim
 
 # CNE
 PRODUCT_PACKAGES += \
@@ -440,6 +440,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePkgs
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.class_main.sh \
@@ -537,6 +541,9 @@ PRODUCT_PACKAGES += \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
     libwpa_client \
+    android.hardware.wifi.supplicant \
+    android.hardware.wifi.hostapd \
+    WifiResCommon \
     wpa_supplicant \
     wpa_supplicant.conf
 

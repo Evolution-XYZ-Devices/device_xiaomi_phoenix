@@ -202,9 +202,6 @@
          phone object irrespective of this config -->
     <bool name="config_switch_phone_on_voice_reg_state_change">false</bool>
 
-    <!-- Boolean indicating if current platform supports BLE peripheral mode -->
-    <bool name="config_bluetooth_le_peripheral_mode_supported">true</bool>
-
     <!-- Is the device capable of hot swapping an ICC Card -->
     <bool name="config_hotswapCapable">true</bool>
 
@@ -240,9 +237,6 @@
     <integer name="config_wifi_framework_wifi_score_low_rssi_threshold_24GHz">-73</integer>
     <integer name="config_wifi_framework_wifi_score_low_rssi_threshold_5GHz">-70</integer>
 
-    <!-- Operating volatage for bluetooth controller. 0 by default-->
-    <integer name="config_bluetooth_operating_voltage_mv">3300</integer>
-
     <!-- Default list of files pinned by the Pinner Service -->
     <string-array translatable="false" name="config_defaultPinnerServiceFiles">
         <item>"/system/bin/surfaceflinger"</item>
@@ -252,7 +246,6 @@
         <item>"/system/framework/arm64/boot-core-libart.oat"</item>
         <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
         <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
-        <item>"/apex/com.android.media/javalib/updatable-media.jar"</item>
         <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
         <item>"/system/bin/surfaceflinger"</item>
         <item>/system/lib64/libRScpp.so</item>
@@ -274,7 +267,6 @@
         <item>"/system/framework/services.jar"</item>
         <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
         <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
-        <item>"/apex/com.android.media/javalib/updatable-media.jar"</item>
         <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
         <item>"/system/lib64/libsurfaceflinger.so"</item>
     </string-array>
