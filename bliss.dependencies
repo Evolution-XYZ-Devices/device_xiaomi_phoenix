@@ -10,5 +10,11 @@
     "repository": "redcliff-op/android_kernel_xiaomi_phoenix",
     "target_path": "kernel/xiaomi/phoenix",
     "revision": "R"
+  },
+  {
+    "remote": "github",
+    "repository": "ArrowOS-Devices/android_device_xiaomi_extras",
+    "target_path": "device/xiaomi/extras",
+    "revision": "arrow-12.0"
   }
 ]
