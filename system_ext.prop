@@ -1,5 +1,2 @@
 # DPM
 persist.vendor.dpm.feature=11
-
-#CPU Model
-ro.processor.model=SD730
