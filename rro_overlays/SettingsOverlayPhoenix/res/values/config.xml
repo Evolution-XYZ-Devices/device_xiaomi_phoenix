@@ -30,4 +30,7 @@
 
     <!-- Whether to show a preference item for mobile plan -->
     <bool name="config_show_mobile_plan">false</bool>
+
+     <!-- Device specific doze package -->
+    <string name="config_customDozePackage" translatable="false">org.lineageos.settings.doze/org.lineageos.settings.doze.DozeSettingsActivity</string>
 </resources>
