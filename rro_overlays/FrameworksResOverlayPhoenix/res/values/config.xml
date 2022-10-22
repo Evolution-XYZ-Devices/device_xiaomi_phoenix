@@ -442,7 +442,7 @@
         <item>430</item>
         <item>434</item>
         <item>445</item>
-        <item>445</item>
+        <item>500</item>
     </array>
 
     <!-- Minimum screen brightness setting allowed by the power manager.
@@ -465,7 +465,7 @@
          This array should be equal in size to config_screenBrightnessBacklight -->
     <array name="config_screenBrightnessNits">
         <item>2.0</item>
-        <item>450.0</item>
+        <item>500.0</item>
     </array>
 
     <!-- Maximum screen brightness setting allowed by the power manager.
