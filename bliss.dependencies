@@ -7,9 +7,9 @@
   },
   {
     "remote": "github",
-    "repository": "redcliff-op/android_kernel_xiaomi_phoenix",
+    "repository": "San4255/risan---kernel_xiaomi_phoenix",
     "target_path": "kernel/xiaomi/phoenix",
-    "revision": "R"
+    "revision": "risan"
   },
   {
     "remote": "github",
