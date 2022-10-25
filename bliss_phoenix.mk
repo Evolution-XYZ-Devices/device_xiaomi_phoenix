@@ -20,8 +20,7 @@ PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X2
 PRODUCT_MANUFACTURER := Xiaomi
 
-# Bliss variant and build type
-BLISS_BUILD_VARIANT := gapps
+# Bliss and build type
 BLISS_BUILDTYPE=OFFICIAL
 
 # Boot animation
