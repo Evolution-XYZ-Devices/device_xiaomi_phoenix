@@ -7,8 +7,4 @@
       android:isStatic="true"
       android:priority="1"/>
 
-    <overlay android:targetPackage="com.android.settings"
-      android:isStatic="true"
-      android:resourcesMap="@xml/overlays"
-      android:priority="1"/>
 </manifest>

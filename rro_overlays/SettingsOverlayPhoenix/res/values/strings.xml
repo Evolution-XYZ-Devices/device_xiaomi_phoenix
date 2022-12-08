@@ -14,13 +14,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="bliss_maintainer">shripal17</string>
 
-     <!-- Refresh rate -->
-    <string name="refresh_rate_title">Minimum refresh rate</string>
-
     <!-- Display settings screen, peak refresh rate settings title [CHAR LIMIT=30] -->
     <string name="peak_refresh_rate_title">Variable Refresh Rate</string>
 
     <!-- Display settings screen, peak refresh rate settings summary [CHAR LIMIT=NONE] -->
-    <string name="peak_refresh_rate_summary">Automatically adapt the refresh rate from minimum refresh rate (set above) to maximum 120Hz based on device usage. Disabling this may reduce battery usage.</string>
+    <string name="peak_refresh_rate_summary">Automatically adapt the refresh rate from minimum set rate to maximum 120Hz based on device usage. Enabling this may increase battery usage.</string>
 
 </resources>

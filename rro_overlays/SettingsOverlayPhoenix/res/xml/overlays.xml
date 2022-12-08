@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<overlay xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
-    <!-- Display settings screen, peak refresh rate settings title [CHAR LIMIT=30] -->
-    <item target="string/peak_refresh_rate_title" value="Variable Refresh Rate" />
-
-    <!-- Display settings screen, peak refresh rate settings summary [CHAR LIMIT=NONE] -->
-    <item target="string/peak_refresh_rate_summary" value="Automatically adapt the refresh rate from minimum refresh rate (set above) to maximum 120Hz based on device usage. Disabling this may reduce battery usage." />
-</overlay>
