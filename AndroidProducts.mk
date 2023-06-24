@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bliss_phoenix.mk
+    $(LOCAL_DIR)/evolution_phoenix.mk
 
 COMMON_LUNCH_CHOICES := \
-    bliss_phoenix-user \
-    bliss_phoenix-userdebug \
-    bliss_phoenix-eng
+    evolution_phoenix-user \
+    evolution_phoenix-userdebug \
+    evolution_phoenix-eng
