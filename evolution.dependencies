@@ -1,20 +1,14 @@
 [
-  {
-    "remote": "github",
-    "repository": "RonitKrShah/vendor_xiaomi_phoenix",
-    "target_path": "vendor/xiaomi/phoenix",
-    "revision": "13"
+ {
+    "repository"  : "device_xiaomi_phoenix",
+    "target_path" : "device/xiaomi/phoenix"
   },
   {
-    "remote": "github",
-    "repository": "San4255/risan---kernel_xiaomi_phoenix",
-    "target_path": "kernel/xiaomi/phoenix",
-    "revision": "risan"
+    "repository"  : "vendor_xiaomi_phoenix",
+    "target_path" : "vendor/xiaomi/phoenix"
   },
   {
-    "remote": "github",
-    "repository": "ArrowOS-Devices/android_device_xiaomi_extras",
-    "target_path": "device/xiaomi/extras",
-    "revision": "arrow-12.0"
+    "repository"  : "kernel_xiaomi_phoenix",
+    "target_path" : "kernel/xiaomi/phoenix" 
   }
 ]
