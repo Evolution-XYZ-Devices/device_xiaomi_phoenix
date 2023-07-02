@@ -123,7 +123,6 @@ PRODUCT_PACKAGES += \
     libdng_sdk.vendor \
     libgui_vendor \
     libxml2 \
-    GCamGOPrebuilt-V3_8 \
     vendor.qti.hardware.camera.device@1.0.vendor \
     android.hidl.memory.block@1.0.vendor \
     libstdc++.vendor

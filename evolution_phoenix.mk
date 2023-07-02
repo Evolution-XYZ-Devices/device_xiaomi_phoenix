@@ -9,11 +9,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/phoenix/device.mk)
 
+# Camera
+$(call inherit-product-if-exists, device/xiaomi/phoenix-miuicamera/config.mk)
+
 # Inherit some common Evolution X stuff.
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Evolution X Build Type & Maintainer stuff.
-EVO_BUILD_TYPE := Official
+EVO_BUILD_TYPE := Unofficial
 
 # Gapps Build Details.
 TARGET_USES_MINNI_GAPPS := true
