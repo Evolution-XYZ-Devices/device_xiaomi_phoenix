@@ -38,10 +38,10 @@ TARGET_BOOT_ANIMATION_RES := 1080
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Build Fingerprint.
-#PRODUCT_BUILD_PROP_OVERRIDES += \
-#    PRIVATE_BUILD_DESC="raven-user 13 TP1A.221005.002/9012097 release-keys"
-#
-#BUILD_FINGERPRINT := google/raven/raven:13/TP1A.221005.002/9012097:user/release-keys
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="raven-user 13 TP1A.221005.002/9012097 release-keys"
+
+BUILD_FINGERPRINT := google/raven/raven:13/TP1A.221005.002/9012097:user/release-keys
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := evolution_phoenix
