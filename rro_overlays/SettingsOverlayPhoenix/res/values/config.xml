@@ -36,15 +36,5 @@
 
     <!-- Whether to show toggle to enable/disable variable refresh rate -->
     <bool name="config_show_smooth_display">true</bool>
-	
-    <!-- Battery health -->
-    <string name="config_batteryCalculatedCapacity">/sys/class/power_supply/battery/charge_full</string>
-    <string name="config_batteryDesignCapacity">/sys/class/power_supply/battery/charge_full_design</string>
-    <string name="config_batteryChargeCycles">/sys/class/power_supply/battery/cycle_count</string>
-    <bool name="config_supportBatteryHealth">true</bool>
-
-    <!-- Smart Charging -->
-    <bool name="config_supportSmartCharging">true</bool>
-    <bool name="config_smartChargingAvailable">true</bool>
 
 </resources>
