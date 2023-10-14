@@ -19,7 +19,7 @@ $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 EVO_BUILD_TYPE := OFFICIAL
 
 # Gapps Build Details.
-WITH_GAPPS := true
+TARGET_USES_MINNI_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
 
 # Custom stuff.
